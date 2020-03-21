@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>proflit</title>
+<!--fonts-->
+<link href='//fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!--//fonts-->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/swipebox.css">
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Heavy Industry Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->	
+<!-- js -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- js -->
+<script src="js/modernizr.custom.js"></script>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+</head>
+<body>
+<!-- top header -->
+<div class="banner">
+	<div class="container">
+		<div class="top-header">
+				<div class="top-left">
+					<ul>
+						<li><a href="#">Бестселлеры</a></li>
+						<li><a href="#">Акции</a></li>
+					</ul>
+				</div>
+				<div class="top-right">
+					<ul>
+						<li><a class="fb" href="#"></a></li>
+						<li><a class="twi" href="#"></a></li>
+						<li><a class="pin" href="#"></a></li>
+						<li><a class="goog" href="#"></a></li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+				<div class="top-logo">
+					<a href="index.html">Издательство <span>Профессиональная литература</span>
+					
+					</a>
+				</div>
+		</div>
+		<div class="top-nav">
+					<div class="nav-icon">
+							<a href="#" class="right_bt" id="activator"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> </a>
+							<a class="scroll top-indus" href="#top-industries">Жанры</a>
+							<div class="clearfix"></div>
+					</div>
+					<div class="box" id="box">
+						<div class="box_content">        					                         
+							<div class="box_content_center">
+								<div class="form_content">
+									<div class="menu_box_list">
+										<ul>
+											<li><a class="active" href="index.html"><span>home</span></a></li>
+											<li><a href="#"><span>---</span></a></li>
+											<li><a href="#"><span>---</span></a></li>
+											<li><a href="#"><span>---</span></a></li>										
+											<li><a href="#"><span>---</span></a></li>
+										
+										</ul>
+									</div>
+									<a class="boxclose" id="boxclose"> <span> </span></a>
+								</div>                                  
+							</div> 	
+						</div> 
+					</div>       	  
+		</div>
+				<!--start-click-drop-down-menu-->
+						<!--start-dropdown-->
+						 <script type="text/javascript">
+							var $ = jQuery.noConflict();
+								$(function() {
+									$('#activator').click(function(){
+										$('#box').animate({'top':'0px'},900);
+									});
+									$('#boxclose').click(function(){
+									$('#box').animate({'top':'-1000px'},900);
+									});
+								});
+								$(document).ready(function(){
+								//Hide (Collapse) the toggle containers on load
+								$(".toggle_container").hide(); 
+								//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+								$(".trigger").click(function(){
+									$(this).toggleClass("active").next().slideToggle("slow");
+										return false; //Prevent the browser jump to the link anchor
+								});
+													
+							});
+						</script>
+				<!--//End-click-drop-down-menu-->
+		<div class="banner-info">
+			<!-- responsiveslides -->
+							<script src="js/responsiveslides.min.js"></script>
+								<script>
+									// You can also use "$(window).load(function() {"
+									$(function () {
+									 // Slideshow 4
+									$("#slider3").responsiveSlides({
+										auto: true,
+										pager: false,
+										nav: false,
+										speed: 500,
+										namespace: "callbacks",
+										before: function () {
+									$('.events').append("<li>before event fired.</li>");
+									},
+									after: function () {
+										$('.events').append("<li>after event fired.</li>");
+										}
+										});
+										});
+								</script>
+			<!-- responsiveslides -->
+			<div  id="top" class="callbacks_container">
+					<li class="rslides" id="slider3">
+						<div class="banner-text">
+							<h3>"Искусство читать - это искусство мыслить с некоторой помощью другого"</h3>
+							<p> Эмиль Фаге</p>
+							<a href="#" class="hvr-rectangle-out button">Ознакомиться</a>
+							<a href="#" class="hvr-rectangle-in button red">Купить</a>
+						</div>
+					</li>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //top header -->
+
+<!--start-yachts-->
+<div id="top-industries" class="gallery">
+	<div class="container">
+	  <h3 class="tittle">Жанры</h3>
+			<div class="gallery-bottom">
+			     <div class="view view-ninth">
+                   <a href="images/g1.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/g1.jpg" alt="" class="img-responsive">
+                    <div class="mask mask-1"></div>
+                    <div class="mask mask-2"></div>
+                    <div class="content">
+                        <h2>Фантастика</h2>
+                        
+                    </div></a>
+                </div>
+              <div class="view view-ninth">
+                   <a href="images/g2.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/g2.jpg" alt="" class="img-responsive">
+                    <div class="mask mask-1"></div>
+                    <div class="mask mask-2"></div>
+                    <div class="content">
+                        <h2>История</h2>
+                    </div></a>
+                </div>
+                 <div class="view view-ninth">
+                   <a href="images/g3.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/g3.jpg" alt="" class="img-responsive">
+                    <div class="mask mask-1"></div>
+                    <div class="mask mask-2"></div>
+                    <div class="content">
+                       <h2>Психология</h2>
+					</div></a>
+                </div>
+                <div class="view view-ninth">
+                   <a href="images/g4.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/g4.jpg" alt="" class="img-responsive">
+                    <div class="mask mask-1"></div>
+                    <div class="mask mask-2"></div>
+                    <div class="content">
+                        <h2>Романы</h2>                  
+                    </div></a>
+                </div>
+               <div class="view view-ninth">
+                   <a href="images/g5.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/g5.jpg" alt="" class="img-responsive">
+                    <div class="mask mask-1"></div>
+                    <div class="mask mask-2"></div>
+                    <div class="content">
+                        <h2>Детективы</h2>
+                    </div></a>
+                </div>
+                 <div class="view view-ninth">
+                   <a href="images/g6.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/g6.jpg" alt="" class="img-responsive">
+                    <div class="mask mask-1"></div>
+                    <div class="mask mask-2"></div>
+                    <div class="content">
+                        <h2>Классика</h2>
+                    </div></a>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+	</div>
+</div>
+
+	<script src="js/jquery.swipebox.min.js"></script> 
+	    <script type="text/javascript">
+			jQuery(function($) {
+				$(".swipebox").swipebox();
+			});
+</script>
+
+<!-- features-->
+
+
+</body>
+</html>
